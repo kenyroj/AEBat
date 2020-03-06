@@ -5,7 +5,7 @@
 @IF "%1"=="S" GOTO:BACKUP
 @IF "%1"=="R" GOTO:RESTORE
 @IF "%1"=="L" GOTO:LIST
-@ECHO Options: R/B/L
+@ECHO Options: R/B/S/L
 @GOTO:EOF
 
 :BACKUP
