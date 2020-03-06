@@ -10,7 +10,7 @@
 
 :BACKUP
 @ECHO Backup Files
-@GnuWin32\rm -rf ldb
+@RMDIR /Q /S ldb
 @ADB pull /data/data/games.wfs.anothereden/files/ldb .
 @GOTO:EOF
 
