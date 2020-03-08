@@ -8,3 +8,6 @@ root@shamu:/ #
 條件: 無
 功能: 營幕截圖，輸入 'CAP' 之後，會在當前目錄下出現 AE_CAP.png 的檔案。
 
+【WIFI】
+條件: 需 root
+功能: 開/關 WIFI。輸入 'WIFI 1' 為打開 WIFI，輸入 'WIFI 0' 為關閉 WIFI。
