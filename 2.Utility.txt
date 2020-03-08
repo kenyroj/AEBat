@@ -1,0 +1,10 @@
+【使用前提】
+這裡提供的 BAT 工具都是透過 Android 的 adb command 工具來達成。
+輸入 adb shell 有出現類似下面的畫面即表示符合使用前提。
+E:\AnoEdnX> adb shell
+root@shamu:/ #
+
+【CAP】
+條件: 無
+功能: 營幕截圖，輸入 'CAP' 之後，會在當前目錄下出現 AE_CAP.png 的檔案。
+
