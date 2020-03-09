@@ -9,18 +9,18 @@
 @GOTO:EOF
 
 :BACKUP
-@ECHO Backup Files
+@ECHO ::::Backup Files
 @RMDIR /Q /S ldb
 @ADB pull /data/data/games.wfs.anothereden/files/ldb .
 @GOTO:EOF
 
 :RESTORE
-@ECHO Restore Files
+@ECHO ::::Restore Files
 @ADB shell rm -rf /data/data/games.wfs.anothereden/files/ldb
 @ADB push ldb /data/data/games.wfs.anothereden/files/
 @ADB shell chown -R %UID%:%UID% /data/data/games.wfs.anothereden/files/ldb
 @GOTO:EOF
 
 :LIST
-@ECHO List Files - Not implement
+@ECHO ::::List Files - Not implement
 @GOTO:EOF

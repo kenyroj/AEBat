@@ -4,12 +4,12 @@
 @GOTO:EOF
 
 :ON
-@ECHO Turn ON WIFI
+@ECHO ::::Turn ON WIFI
 @ADB shell svc wifi enable
 @GOTO:EOF
 
 :OFF
-@ECHO Turn OFF WIFI
+@ECHO ::::Turn OFF WIFI
 @ADB shell svc wifi disable
 @GOTO:EOF
 
