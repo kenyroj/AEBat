@@ -1,41 +1,41 @@
-�L�����~�B�J By ���� (��A2020/03/07�׭q)
+無限引繼步驟 By 阿肯 (制服2020/03/07修訂)
 
-�i�����}�һݭn�g���B�J�j
+【首次開啟需要經歷步驟】
 
-1. �ϥ�Windows�q���A�W���j�M�i�]���������j�äU�������C�Y���Ĥ@���U���A�]�ƥi���٨SROOT�A�������W��]�w(�����ϥ�)����¦�]�w���Ұʿﶵ���U���i�}��Root�j���ġ��O�s�]�w�C
+1. 使用Windows電腦，上網搜尋【夜神模擬器】並下載完成。若為第一次下載，設備可能還沒ROOT，必須按上方設定(齒輪圖示)→基礎設定→啟動選項底下的【開啟Root】打勾→保存設定。
 
-2. ����LINE�s�յ��O�������оǨB�J�A�NGit�u��w�˦n�B�ç�n�����ɮסC
+2. 按照LINE群組筆記本中的教學步驟，將Git工具安裝好、並抓好相關檔案。
 
-3. ���}�R�O���ܦr��(Win+R ��J cmd)�A�|�X�{�@�Ӷ¦�����A��J�G�iCD Anoednx(��enter)�j�A���ʨ������Ƨ��C
+3. 打開命令提示字元(Win+R 輸入 cmd)，會出現一個黑色視窗，輸入：【CD Anoednx(按enter)】，移動到對應資料夾。
 
-4. �s���������G��J�iadb connect 127.0.0.1:62001�j�ë�enter
-   (�i�����ƻs�K�W�W����r�C�K�W��k���G�ƹ��k����K�W�A�o�̤����ctrl + v)
-   �Y����ܡG�iconnected to 127.0.0.1:62001�j�Y�N���s�����\�C
+4. 連接模擬器：輸入【adb connect 127.0.0.1:62001】並按enter
+   (可直接複製貼上上條文字。貼上方法為：滑鼠右鍵→貼上，這裡不能按ctrl + v)
+   若有顯示：【connected to 127.0.0.1:62001】即代表連接成功。
 
-5. �ˬdRoot�G��J�iadb shell�j���O�A�Y�X�{�F�iroot@shamu:/ #�j�����O�A�᭱�X�{���O�i#�j�A�N���A��Root�v���A�~���~�����ʧ@�C
-   ��Ctrl-D �i�H�h�X�^����Ƨ��C
+5. 檢查Root：輸入【adb shell】指令，若出現了【root@shamu:/ #】的指令，後面出現的是【#】，代表你有Root權限，才能繼續後續動作。
+   按Ctrl-D 可以退出回到原資料夾。
 
-6. �ק�ID�G��J�iadb shell ls -l /data/data/games.wfs.anothereden/�j���O�A�|�]�X�n�h��r�A�䤤���X��p�U�G
+6. 修改ID：輸入【adb shell ls -l /data/data/games.wfs.anothereden/】指令，會跑出好多行字，其中有幾行如下：
    drwxrwx--x u0_a43   u0_a43            2020-02-02 23:50 app_textures
    drwx------ u0_a43   u0_a43            2020-02-08 02:01 app_webview
-   �X�{��u0_a43�����i43�j�O�A��ID�A�n�b��L�a��ק�o�ӼƦr�C(�C�ӤH�q�����i�ण�@��)
-   ���Ȯɤ��޶¦⤶���A�令���}�ୱ�W��PT��Ƨ����A���ӡiAE.BAT�j���ɮ�(�N�O�֤j���{��)�A�ƹ��k���I��i�s��j�C�p�G�X�{�iWindows�w�O�@�A���q���j������ĵ�ܡA���I��i��L��T�j���i���n����j
-   ���\���}AE.BAT��A�̤W�����檺�i@SET UID=u0_a36�j�A�Ч�i36�j�令�A���ݨ쪺ID(�Ҧp�G43)�A�M���x�s�����}�C
+   出現的u0_a43中的【43】是你的ID，要在其他地方修改這個數字。(每個人電腦都可能不一樣)
+   先暫時不管黑色介面，改成打開桌面上的PT資料夾中，有個【AE.BAT】的檔案(就是肯大的程式)，滑鼠右鍵點選【編輯】。如果出現【Windows已保護你的電腦】之類的警示，請點選【其他資訊】→【仍要執行】
+   成功打開AE.BAT後，最上面那行的【@SET UID=u0_a36】，請把【36】改成你剛剛看到的ID(例如：43)，然後儲存並離開。
 
-7. ���ߡA�A�ש󧹦��F�e�m�]�w�C����ϥΥi�����Ѧҡi����C���n�ϥΪ��B�J�j�C
+7. 恭喜，你終於完成了前置設定。之後使用可直接參考【之後每次要使用的步驟】。
 
 
-�i����C���n�ϥΪ��B�J�j
+【之後每次要使用的步驟】
 
-1. �}�Ҽ������B�}�Үɪſ�
+1. 開啟模擬器、開啟時空貓
 
-2. Win+R ��J cmd �� CD Anoednx �� adb connect 127.0.0.1:62001
+2. Win+R 輸入 cmd → CD Anoednx → adb connect 127.0.0.1:62001
 
-3. �}�l�ϥγƥ�/���~�j�k�C
-   ��J AE S �N���A�n��ɪſߪ��s�ɳƥ���PC�̡C
-   ��J AE R �N���A�n����ƥ����s�ɩ�^�ɪſ��x�s�Ŷ����C
+3. 開始使用備份/引繼大法。
+   輸入 AE S 代表你要把時空貓的存檔備份到PC裡。
+   輸入 AE R 代表你要把剛剛備份的存檔放回時空貓儲存空間中。
 
-��ĳ�ާ@���ǡGAE S �� ������ �� ��ܰʧ@(ex:�i�ۼ��B�i�J�F��ƥ��B�j�ƪZ��) �� (��������) �� �����ɪſ� �� AE R �� �}�Һ����B�ɪſ� �� ������ �� ���ܰʧ@ (�H�W����) )=
-��ĳ����������k�G�]�����������ୱ�� Tools ��Ƨ� �� �]�w �� Wifi�C �i���Υk�U������Ӫ���ά��|��������ֳt�����ɪſ�/wifi�]�w�A�H�D�ֳt�C
+建議操作順序：AE S → 關網路 → 選擇動作(ex:進幻璃、進入東方副本、強化武器) → (不幸失敗) → 關閉時空貓 → AE R → 開啟網路、時空貓 → 關網路 → 選選擇動作 (以上重複) )=
+建議關閉網路方法：夜神模擬器的桌面→ Tools 資料夾 → 設定 → Wifi。 可善用右下角的兩個長方形相疊的那個鍵快速切換時空貓/wifi設定，以求快速。
 
 

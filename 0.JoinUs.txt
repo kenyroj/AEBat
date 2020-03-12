@@ -1,27 +1,27 @@
-�i�L�����~��(�άO��L�٩I?)�[�J��k�j
+【無限引繼黨(或是其他稱呼?)加入方法】
 
-�ݨϥ�Windws�t�ιq��
+需使用Windws系統電腦
 
-�i�U���Φw�˨B�J�j
+【下載及安裝步驟】
 
-1. �N�U�C���}�K���s�����W�A�U�����ɮרùB��C
+1. 將下列網址貼到瀏覽器上，下載該檔案並運行。
 https://tinyurl.com/ryb8q7e
 
-2. ������u�U�@�B�v�A�������ݭn�վ����ﶵ�A����w�˧����C
+2. 持續按「下一步」，中間不需要調整任何選項，直到安裝完成。
 
 
-3. ���}�R�O���ܦr��(Win+R ��J cmd)�|�X�{�@�Ӷ¦�����A�åB��������iC:\Users\�A���ϥΪ̦W�r>�j�o�˪��榡�C
+3. 打開命令提示字元(Win+R 輸入 cmd)會出現一個黑色視窗，並且顯示類似【C:\Users\你的使用者名字>】這樣的格式。
 
-4. ��ӵ�����J�igit clone https://github.com/kenyroj/AnoEdnX.git�j���O�C��ĳ�νƻs�K�W���C(�K�W��k���G�ƹ��k����K�W�A�����ctrl + v)
- ���B�J�O���F�q�����W��U�Ҧ������ɮסA�æs��b�iAnoEdnX�j�o�Ӹ�Ƨ����C
+4. 於該視窗輸入【git clone https://github.com/kenyroj/AnoEdnX.git】指令。建議用複製貼上的。(貼上方法為：滑鼠右鍵→貼上，不能按ctrl + v)
+ 此步驟是為了從網路上抓下所有相關檔案，並存放在【AnoEdnX】這個資料夾中。
 
-5. ��ܡidone.�j��N����Ƨ짹�A�ѤU���B�J�Ш����|��iC:\Users\�A���ϥΪ̦W�r\AnoEdnX�j�����iReadMe�j�ɮ�
+5. 顯示【done.】後代表資料抓完，剩下的步驟請見路徑於【C:\Users\你的使用者名字\AnoEdnX】中的【ReadMe】檔案
 
 
-�i�ɮק�s�B�J�j
-�p�G�������ɮצ��o����s�A�аѦҥH�U�B�J�G
+【檔案更新步驟】
+如果日後相關檔案有發布更新，請參考以下步驟：
 
-1. ���}�R�O���ܦr��(Win+R ��J cmd)�A��J�iCD anoednx�j������ɪſ߸�Ƨ��C
+1. 打開命令提示字元(Win+R 輸入 cmd)，輸入【CD anoednx】切換到時空貓資料夾。
 
-2. ��J�igit pull�j���O�A�|�۰���ܤ@�j���r�i�D�A��s�F�����ɮסC
-�Y�w�g��s���̷s�����A�|��ܡiAlready up to date�j�C
+2. 輸入【git pull】指令，會自動顯示一大串文字告訴你更新了什麼檔案。
+若已經更新成最新版本，會顯示【Already up to date】。
