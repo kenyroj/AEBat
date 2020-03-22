@@ -1,0 +1,135 @@
+<html>
+<head>
+  <link rel=stylesheet type="text/css" href="../css/AnoEdnX.css" />
+</head>
+<body class="context">
+<a name="top"></a>
+<h1 onMouseOver="this.className='MouseOver1'" onMouseOut="this.className='h1'">無限步驟</h1>
+
+<a name="Init"></a>
+<hr /><h2 onMouseOver="this.className='MouseOver2'" onMouseOut="this.className='h2'">首次使用</h2>
+<ul>
+  <li>使用Windows電腦，下載【夜神模擬器】並安裝完成。<br>
+    <div class="ae_text">
+https://tw.bignox.com/
+    </div>
+    持續按「下一步」，中間不需要調整任何選項，直到安裝完成。</li>
+  <li>打開命令提示字元【Win+R 輸入 cmd】會出現一個黑色視窗，輸入下列指令，移動到對應資料夾。
+    <div class="ae_cmd">
+CD AnoEdnX
+    </div>
+  </li>
+  <li>連接模擬器，輸入下列指令
+    <div class="ae_cmd">
+adb connect 127.0.0.1:62001
+    </div>
+  </li>
+  <li>檢查是否具有 root 權限，輸入下列指令
+    <div class="ae_cmd">
+adb shell
+    </div>
+	會出現類似下列的提示符號
+	<div class="ae_text">
+root@shamu:/ #
+	</div>
+	最後面是【#】則表示具有 Root 權限，按 Ctrl-D 可以退出回到命令提示字元
+  </li>
+</ul>
+<a name="SetID"></a>
+<hr /><h2 onMouseOver="this.className='MouseOver2'" onMouseOut="this.className='h2'">修改 ID</h2>
+<ul>
+  <li>修改 ID，請先輸入下列指令
+    <div class="ae_cmd">
+adb shell ls -l /data/data/games.wfs.anothereden/
+    </div>
+	會出現類似下列的畫面，那個 u0_a43 就是你的 ID
+	<div class="ae_text">
+drwxrwx--x u0_a43   u0_a43            2020-03-02 23:50 app_textures<br/>
+drwx------ u0_a43   u0_a43            2020-03-08 02:01 app_webview
+	</div>
+	輸入下列指令，以使用記事本來打開 AE.bat
+    <div class="ae_cmd">
+notepad AE.BAT
+    </div>
+	會看到第一行就是【@SET UID=u0_a38】，請把它改成你剛剛看到的 u0_a43，然後存檔關閉。
+	<div class="ae_text">
+@SET UID=u0_a43	</div>
+  </li>
+</ul>
+
+<a name="Regular"></a>
+<hr /><h2 onMouseOver="this.className='MouseOver2'" onMouseOut="this.className='h2'">一般使用</h2>
+<ul>
+  <li>開啟模擬器、開啟時空貓</li>
+  <li>打開命令提示字元【Win+R 輸入 cmd】，輸入下列指令
+    <div class="ae_cmd">
+CD Anoednx<br/>
+adb connect 127.0.0.1:62001
+    </div>
+  </li>
+  <li>自此可以開使用備份/還原大法。
+  輸入以下指令，把夜神裡的記錄備份到本機電腦裡
+    <div class="ae_cmd">
+AE S
+    </div>
+  輸入以下指令，把本機電腦的記錄還原到夜神裡
+    <div class="ae_cmd">
+AE R
+    </div>
+  </li>
+  <li>進行動作之前先存檔
+    <div class="ae_cmd">
+AE S
+    </div>
+  </li>
+  <li>建議操作順序
+    <div class="ae_cmt">
+關閉網路<br/>
+選擇動作(ex:進幻璃、進入東方副本、強化武器)<br/>
+(不幸失敗)<br/>
+關閉時空貓<br/>
+    </div>
+    <div class="ae_cmd">
+AE R
+    </div>
+    <div class="ae_cmt">
+打開時空貓<br/>
+開啟網路
+    </div>
+  </li>
+</ul>
+
+<a name="Advence"></a>
+<hr /><h2 onMouseOver="this.className='MouseOver2'" onMouseOut="this.className='h2'">進階使用</h2>
+<ul>
+  <li>請參考 <a href="./BATUtility.html">BAT工具</a> 頁面，我們可以用指令來實現 打開/關閉網路 及 打開/關閉時空貓，那原本步驟的可以變成這樣
+    <div class="ae_cmd">
+WIFI 0
+    </div>
+    <div class="ae_cmt">
+選擇動作(ex:進幻璃、進入東方副本、強化武器)<br/>
+(不幸失敗)
+    </div>
+    <div class="ae_cmd">
+APP 0<br/>
+AE R<br/>
+APP 1<br/>
+WIFI 1
+    </div>
+  <li>DOS 指令可以用 && 符號串在一起，所以可以一口氣下四個指令，我們的步驟變成這樣</li>
+    <div class="ae_cmd">
+WIFI 0
+    </div>
+    <div class="ae_cmt">
+選擇動作(ex:進幻璃、進入東方副本、強化武器)<br/>
+(不幸失敗)
+    </div>
+    <div class="ae_cmd">
+APP 0 && AE R && APP 1 && WIFI 1
+    </div>
+  </li>
+  <li>方向鍵【↑】和【↓】可以快速出現前面輸入過的指令，如此一來可以不用一直打重複的指令。</li>
+</ul>
+
+</body>
+</html>

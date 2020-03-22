@@ -1,0 +1,106 @@
+
+h1 {
+    font-size: 24pt;
+    color:mediumpurple;background-color: orange;
+    width:75% ;
+    padding-top:3;
+    border-bottom: 2px solid #663300;
+    border-right: 2px solid #663300;
+    border-left: 2px solid #FFECB0;
+    border-top: 2px solid #FFECB0;
+}		
+.MouseOver1 {
+    color:white; background-color: red;
+    border-bottom: 2px solid #FFECB0;
+    border-right: 2px solid #FFECB0;
+    border-left: 2px solid #663300;
+    border-top: 2px solid #663300; 
+}
+
+h2 {
+    font-size: 20pt;
+    color:tomato;
+    background-color: yellow;
+    width:60% ;
+    padding-top:3;
+    padding-left:3;
+    border-bottom: 1px solid #663300;
+    border-right: 1px solid #663300;
+    border-left: 1px solid #FFECB0;
+    border-top:1px solid #FFECB0;
+}
+.MouseOver2 {
+    color:blue;  
+    background-color: skyblue;
+    border-bottom: 1px solid #FFECB0;
+    border-right: 1px solid #FFECB0;
+    border-left: 1px solid #663300;
+    border-top:1px solid #663300;
+}
+
+
+body {
+	font-family:Microsoft JhengHei,serif,sans-serif,cursive,fantasy,monospace;
+}
+
+.context {
+    background-color: LightGoldenRodYellow;
+}
+
+.menupage {
+    background-color: LightCyan ;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+div {
+  width: 80%;
+  padding: 2px;
+  font-family:Consolas,monospace;
+  font-size: 11pt;
+  background-color: 001600;
+}
+.ae_cmt {
+  color:LightSeaGreen ; 
+  width:50% ;
+}
+.ae_text {
+  color:Silver; 
+  width:50% ;
+}
+.ae_cmd {
+  background-color: black;
+  color:yellow; 
+  width:50% ;
+}
+.ae_con {
+  background-color: black;
+  color:Silver; 
+  width:50% ;
+}
+.ae_cfg {
+  background-color: blue;
+  color:Silver; 
+  width:50% ;
+}
+.ae_img {
+  width:50% ;
+}
+.ae_ban {
+  width:120% ;
+}
+
+
+ul li {font-size: 16pt; color:black}
+ul li ul li {font-size: 12pt; color:black}
